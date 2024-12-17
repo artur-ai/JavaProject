@@ -26,9 +26,9 @@ public class Main {
         sym[0] = 'A';
         sym[1] = 'C';
         sym[2] = 'E';
-        System.out.println(String.valueOf(sym[0]));
-        System.out.println(String.valueOf(sym[1]));
-        System.out.println(String.valueOf(sym[2]));
+        System.out.println(sym[0]);
+        System.out.println (sym[1]);
+        System.out.println(sym[2]);
 
     }
 
