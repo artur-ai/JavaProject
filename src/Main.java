@@ -50,6 +50,7 @@ public class Main {
     // 1. приймає масив чарів, виводить його на екран
     public static void CharArray (char[] array) {
         System.out.println(array);
+
     }
 
 
