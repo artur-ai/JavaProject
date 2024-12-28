@@ -9,7 +9,7 @@ public class Main {
 
         //2. приймає масив інтів, повертає масив чарів, кожен символ у позиції масиву
         // відповідає коду символу передається інта
-        int [] array1 = {1, 5, 6, 10};
+        int [] array1 = {65, 66, 67, 68, 69};
         char[] charArray = ToCharArray(array1);
         for (char symbol : charArray) {
             System.out.println(symbol);
@@ -39,6 +39,30 @@ public class Main {
             Max = e;
         }
         System.out.println("Більше з цих цифр: " + Max);
+
+
+        // 5. приминає 5 інтів, повертає більше їх
+        int f = 543253425;
+        int g = 543565467;
+        int h = 543665466;
+        int j = 543569085;
+        int k = 543565490;
+
+        int maxVal = f;
+        if (g>maxVal) {
+            maxVal = g;
+        }
+        if (h>maxVal) {
+            maxVal = h;
+        }
+        if (j>maxVal) {
+            maxVal = j;
+        }
+        if (k>maxVal) {
+            maxVal = k;
+        }
+        System.out.println("Найбільше з цих цифр: " +maxVal);
+
 
 
 
@@ -76,6 +100,12 @@ public class Main {
     public static int maxValue (int c, int e, int d){
         return maxValue(c, d, e);
 
+    }
+
+
+    //5. приминає 5 інтів, повертає більше їх
+    public static int maxValue (int f, int g, int h, int j, int k) {
+        return maxValue(f, g, h, j, k);
     }
 
     }
