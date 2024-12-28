@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+
 public class Main {
     public static void main( String[] args) {
         // 1.  приймає масив чарів, виводить його на екран
@@ -64,6 +66,15 @@ public class Main {
         System.out.println("Найбільше з цих цифр: " +maxVal);
 
 
+        // 6. приймає масив чарів, повертає рядок що складається із символів масиву
+        char [] CharArray1 = {'!', '@', '#', '$', '%', '^', '&', '*', '~'};
+        String result = charToString(CharArray1);
+        System.out.println(result);
+
+
+
+
+
 
 
 
@@ -107,6 +118,14 @@ public class Main {
     public static int maxValue (int f, int g, int h, int j, int k) {
         return maxValue(f, g, h, j, k);
     }
+
+    // 6. приймає масив чарів, повертає рядок що складається із символів масиву
+    public static String charToString (char[] chars) {
+        return new String(chars);
+
+
+    }
+
 
     }
 
