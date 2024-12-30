@@ -72,6 +72,40 @@ public class Main {
         System.out.println(result);
 
 
+         /* 8. приймає масив інтів, і значення типу інт, повертає індекс масиву в якому значення збігається
+         з переданим, починаючи з початку масиву. Якщо значення масиву немає повертає -1 */
+        array1 = new int[]{65, 66, 68, 45};
+        int value = 68;
+        int index = indexOf(array1, value);
+        System.out.println("Index: " +index);
+
+
+
+        /* 9. приймає масив інтів, і значення типу інт, повертає індекс масиву в якому значення
+        збігається з переданим, починаючи з кінця масиву. Якщо значення масиву немає повертає -1*/
+       /* array1 = new int[]{65, 66, 68, 45};
+        value = 68;
+        index = indexOfEnd(array1, value);
+        System.out.println("Index: " +index);*/
+        int[] array2 = {34, 54, 43, 68, 98, 108};
+        int value1 = 108;
+        int index1 = indexOfEnd(array2, value1);
+        System.out.println("Index: " +index1);
+
+
+        // 10. метод приймає інт, і повертає факторіал від заданого інта
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -123,10 +157,50 @@ public class Main {
     public static String charToString (char[] chars) {
         return new String(chars);
 
-
     }
 
 
+
+    /* 8. приймає масив інтів, і значення типу інт, повертає індекс масиву в якому значення збігається
+         з переданим, починаючи з початку масиву. Якщо значення масиву немає повертає -1 */
+
+    public static int indexOf (int [] array1, int value) {
+        for (int i = 0; i < array1.length; i++) {
+            if (array1[i] == value) {
+                return i;
+            }
+        }
+        return -1;
     }
+
+
+     /* 9. приймає масив інтів, і значення типу інт, повертає індекс масиву в якому значення
+        збігається з переданим, починаючи з кінця масиву. Якщо значення масиву немає повертає -1*/
+    public static int indexOfEnd (int[] array2, int value1){
+        for (int i = array2.length - 1; i >= 0; i--){
+            if (array2[i] == value1){
+                return i;
+            }
+
+        }
+        return -1;
+    }
+
+
+    // 10. метод приймає інт, і повертає факторіал від заданого інта
+    public static int
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
