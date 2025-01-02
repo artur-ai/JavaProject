@@ -94,6 +94,9 @@ public class Main {
 
 
         // 10. метод приймає інт, і повертає факторіал від заданого інта
+        int q = 3;
+        System.out.println("Факторіал числа " + q + ": " + Factorial(q));
+
 
 
 
@@ -188,7 +191,17 @@ public class Main {
 
 
     // 10. метод приймає інт, і повертає факторіал від заданого інта
-    public static int
+   // public static int
+    public static int Factorial (int q){
+        if (q < 0) {
+            System.out.println("Факторіал не визначений для від'ємного числа");
+        }
+        if (q == 0 || q == 1) {
+            return 1;
+        }
+
+        return q * Factorial(q - 1);
+    }
 
 
 
