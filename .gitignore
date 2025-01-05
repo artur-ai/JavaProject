@@ -2,3 +2,6 @@
 .idea/
 *.iml
 .out/
+.gitignore/
+.out/production/JavaProject/
+
