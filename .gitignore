@@ -1,0 +1,4 @@
+# Java-specific ignores
+.idea/
+*.iml
+.out/
